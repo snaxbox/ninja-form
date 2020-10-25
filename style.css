@@ -111,6 +111,36 @@ input[type="telephone"]{
 }
 
 /* SELECT BOXES */
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    -ms-appeareance: none;
+    appearance: none;
+
+    display: block;
+    margin: 30px 0;
+    padding: 10px 50px 10px 10px;
+    background: url(img/select.png) no-repeat 95% center;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    width: 280px;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    background: #b61111;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 1px 3px 5px rbga(0,0,0,0.5);
+    width: 280px;
+}
 
 
 /* INPUT VALIDATION STYLES */
