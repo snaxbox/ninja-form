@@ -12,7 +12,7 @@
     </header>
    
 
-    <form>
+    <form id="my-form">
         <!-- Gender -->
         <p>你是 ...</p>
         <input type="radio" id="male" name="gender">
@@ -36,21 +36,25 @@
 
         <fieldset>
             <legend>联系信息</legend>
-            <input type="email" placeholder="Email" required>
+            <input type="email" placeholder="email" required>
             <span class="tick"></span>
-            <input type="telephone" placeholder="Phone Number" required>
+            
+            <input type="tel" placeholder="Phone Number" 
+            pattern="[1]{1}[0-9]{10}" oninvalid="setCustomValidity('忍者手机号都是11位数的阿拉伯数字')" required>
             <span class="tick"></span>
         </fieldset>
 
         <!-- preferred contact -->
-        <p>飞鸽传书 Or Email ?</p>
+        <p>飞鸽传书 or Email ?</p>
         <select>
             <option value="email">By email</option>
             <option value="phone">By telephone</option>
+            <option value="bird">By bird</option>
         </select>
 
         <input type="submit" value="Become a Ninja">
     </form>
     
+    <script src="script.js"></script>
 </body>
 </html>

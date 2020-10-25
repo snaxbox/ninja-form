@@ -14,8 +14,16 @@ header{
 }
 
 form{
-    margin: 20px;
-    color: #eee;
+     /* margin: 20px; */
+    color: #eee; 
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid  #c1c1c1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
 }
 
 form p{
@@ -90,7 +98,7 @@ legend{
     letter-spacing: 0.1em;
 }
 input[type="email"], 
-input[type="telephone"]{
+input[type="tel"]{
     display: block;
     margin-bottom: 20px;
     padding: 10px 10px 10px 50px;
@@ -100,14 +108,20 @@ input[type="telephone"]{
     background-color: #222;
     font-size: 16px;
     color: #fff;
+    float: left;
+    clear: both;
 }
 
 input[type="email"]{
     background-position: 7px 8px;
 }
 
-input[type="telephone"]{
+input[type="tel"]{
     background-position: 7px -58px;
+}
+
+fieldset input{
+    outline: none;
 }
 
 /* SELECT BOXES */
@@ -144,3 +158,33 @@ input[type="submit"]{
 
 
 /* INPUT VALIDATION STYLES */
+
+input[type="email"]:valid,
+input[type="tel"]:valid{
+    border: 2px solid #fff;
+}
+
+input[type="email"]:valid{
+    background-position: 7px -22px;
+}
+
+input[type="tel"]:valid{
+    background-position: 7px -97px;
+}
+
+
+input[type="email"]:valid + .tick,
+input[type="tel"]:valid + .tick{
+    background: url(img/tick.png) center;
+    background-size: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    float: left;
+}
+
+input[type="email"]:invalid,
+input[type="tel"]:invalid{
+    border: 1px solid red;
+}
