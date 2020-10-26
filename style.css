@@ -154,6 +154,7 @@ input[type="submit"]{
     border: 0;
     box-shadow: 1px 3px 5px rbga(0,0,0,0.5);
     width: 280px;
+    cursor: pointer;
 }
 
 
@@ -187,4 +188,95 @@ input[type="tel"]:valid + .tick{
 input[type="email"]:invalid,
 input[type="tel"]:invalid{
     border: 1px solid red;
+}
+
+
+/* ***************** */
+/* modal styles */
+/* ***************** */
+
+.modal-overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    display: none;
+    
+}
+
+.modal-content{
+    background: #f0e4d4; 
+    margin: 0 auto;
+    padding: 30px;
+    width: 600px;
+    position: relative;
+    /* animation-name: modalopen;
+    animation-duration: 0.5s; */
+    animation: modalopen 0.3s ease forwards;
+}
+
+.close-animation{
+    animation: modalclose 0.3s ease forwards;
+}
+
+.modal-content input{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #333;
+    font-size: 18px;
+    outline: none;
+}
+
+.modal-content button{
+    padding: 10px;
+    border: 0;
+    color: red;
+    background: #333;
+    margin-left: -5px;
+    margin-left: -5px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #333;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-content .cross{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #555;
+    color: #ddd;
+    font-weight: bold;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+      transform: translateY(-600px);
+    }
+
+    to {
+     transform: translateY(200px)
+    }
+
+} 
+
+@keyframes modalclose {
+        from {
+          transform: translateY(200px);
+        }
+    
+        to {
+         transform: translateY(-600px)
+        }
 }
