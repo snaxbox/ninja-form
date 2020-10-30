@@ -1,6 +1,9 @@
 # Ninja-form(忍者报名表)
 
+此项目用了一些CSS来装饰的html表格。主题：忍者。使用的是黑色背景和白色字体和一些Javascript用在了提交后的‘已发送’页面和画面。
 
+![Image of ninja form](ninjaform.png)
+![Image of ninja form](sent.png)
 ### About
 
 The objective of this project was to decorate a basic html form with some CSS and javascript. The theme i had in mind was a ninja theme using a dark background and white fonts.
